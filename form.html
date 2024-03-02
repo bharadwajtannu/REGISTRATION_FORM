@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: lightcyan;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      .container {
+        padding: 8px;
+      }
+      form {
+        padding: 15px;
+        display: flex;
+        background-color: #f7efef;
+        width: 300px;
+        border-radius: 8px;
+      }
+      input {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 16px;
+      }
+      label {
+        display: block;
+        margin-bottom: 6px;
+      }
+
+      button {
+        background-color: rgb(77, 77, 182);
+        cursor: pointer;
+        padding: auto;
+        border-radius: 5px;
+        margin: 8px 0;
+        width: 100%;
+      }
+      button:hover {
+        background-color: rgb(223, 126, 126);
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <div class="container">
+        <h1>Register Here!!</h1>
+        <label for="username">Username</label>
+        <input
+          type="text"
+          placeholder="Enter Username"
+          name="username"
+          id="username"
+          required
+        />
+        <label for="email">Email</label>
+        <input
+          type="email"
+          placeholder="Enter your Email"
+          name="email"
+          id="email"
+          required
+        />
+        <label for="number">Phone No.</label>
+        <input
+          type="number"
+          placeholder="Enter your phone no."
+          name="no."
+          id="no."
+        />
+        <label for="password">Password</label>
+        <input
+          type="password"
+          placeholder="Enter password"
+          name="password"
+          id="password"
+          required
+        />
+        <label for="cnfrm pass">Confirm Password</label>
+        <input
+          type="password"
+          placeholder="Re-enter password"
+          name="confirmpassword"
+          id="confirmpassword"
+        />
+        <button type="submit">Register</button>
+      </div>
+    </form>
+  </body>
+</html>
